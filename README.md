@@ -1,165 +1,65 @@
-# Cisco CyberOps Associate — NTI Internship Labs
+# Cisco CyberOps Associate — SOC Labs (Recruiter-friendly)
 
 ![Cisco CyberOps](https://img.shields.io/badge/Cisco-CyberOps%20Associate-blue)
 ![NTI](https://img.shields.io/badge/NTI-Internship-red)
-![Cybersecurity](https://img.shields.io/badge/Focus-Cybersecurity-green)
 ![SOC](https://img.shields.io/badge/Focus-SOC%20%26%20Security%20Operations-orange)
 
-## 🔐 About This Repository
+## TL;DR for recruiters
 
-This repository documents my hands-on labs, practical exercises, and technical work completed during the **Cisco CyberOps Associate course** as part of my cybersecurity training with the **National Telecommunication Institute (NTI)**.
+Practical SOC-focused lab portfolio created while completing the Cisco CyberOps Associate training (NTI). Clear evidence of hands-on skills in packet capture analysis, alert triage, log inspection, and basic incident-response playbooks. Ideal work samples for entry-level SOC (Tier 1) roles.
 
-It represents a practical record of my journey into **Cybersecurity Operations and SOC analysis**, covering real-world concepts related to threat detection, network security, monitoring, investigation, endpoint security, and incident response.
+## Quick highlights
 
-Throughout the training, I worked with different operating systems, network environments, security tools, and analysis techniques while developing a stronger understanding of how cybersecurity incidents are monitored, investigated, and handled.
+- Completed Cisco CyberOps Associate coursework and practical labs (issued: July 9, 2026).
+- Hands-on experience with Wireshark packet captures (DNS, TCP/UDP analysis), Linux shell for investigations, and simulated SOC triage workflows.
+- Familiar with SIEM inspection concepts (Kibana/ELK), IOC extraction, and documenting investigations for escalation.
 
-The repository contains my own **lab work, commands, configurations, screenshots, analysis, observations, results, and technical notes** from the completed exercises.
+## Top lab evidence (what to review first)
 
-> **Note:** Original Cisco course materials and lab instructions are proprietary/copyrighted materials. This repository contains my own work, notes, screenshots, and observations and does not redistribute the original course content.
+1. DNS packet-capture analysis — Wireshark walk-through and annotated findings
+   - Path: Lab 10.2.7/README.md
+   - What it shows: how DNS queries/responses look on the wire, how to filter and extract IOCs, and common indicators to surface in a SOC ticket.
 
----
+2. Linux shell fundamentals for SOC investigations — practical commands and scripting
+   - Path: 4.2.7 lab/README.md
+   - What it shows: using the command line to collect evidence, normalize timestamps (AWK examples), and automate routine tasks.
 
-## 🎓 Course Completion
+3. Security alert and intrusion analysis notes
+   - Path: README sections and lab folders covering alert investigation and intrusion analysis
+   - What it shows: structured investigation notes, containment suggestions, and escalation templates used during training.
 
-I successfully completed the **Cisco CyberOps Associate** course and achieved the corresponding **Cisco Networking Academy student-level credential**.
 
-**Issued:** July 9, 2026
+## How this maps to SOC Tier 1 tasks (copy into your CV)
 
-The course provided practical exposure to key areas of cybersecurity operations, including:
+- Performed packet-capture analysis with Wireshark to extract IOCs (DNS/TCP/UDP), identify suspicious flows, and document evidence for escalation.
+- Conducted simulated SOC shift activities: triaged alerts, validated false positives, and prepared clear escalation notes for Tier 2.
+- Used Linux command-line tooling and simple AWK/shell scripts to collect and normalize logs for investigation.
 
-* Virtual machine deployment and secure lab environments
-* Cybersecurity Operations Analyst responsibilities
-* Windows operating system security and analysis
-* Linux operating system security and administration
-* Network protocols and services
-* Network infrastructure and communication
-* Network attack techniques
-* Network monitoring and traffic analysis
-* Network security and defense
-* Cryptography and its impact on security monitoring
-* Endpoint vulnerabilities and attacks
-* Security alert investigation
-* Network intrusion analysis
-* Compromised host identification
-* Vulnerability analysis
-* Incident response methodologies
+(You can copy any of the above three bullets directly into your CV Projects/Experience section.)
 
----
+## Reader's guide — where to find the key artifacts
 
-## 🧪 Labs & Practical Work
+- Screenshots: check each lab folder; look for files named `*.png`, `*.jpg`, or `screenshot*`.
+- Packet captures: `*.pcap` files (open in Wireshark to reproduce the analysis).
+- Command notes and saved outputs: `*.txt`, `*.log`, or `commands.md` files inside each lab directory.
 
-The labs covered multiple areas of cybersecurity operations and provided hands-on experience with:
+## Make this repo work for your CV (recommended edits)
 
-| #  | Area                        | Focus                                              |
-| -- | --------------------------- | -------------------------------------------------- |
-| 01 | Virtual Machine Environment | Secure lab deployment and virtualization           |
-| 02 | Cybersecurity Operations    | SOC concepts and analyst responsibilities          |
-| 03 | Windows Security            | Windows security features and analysis             |
-| 04 | Linux Security              | Linux administration and security                  |
-| 05 | Network Protocols           | TCP/IP, DNS, HTTP and network services             |
-| 06 | Network Infrastructure      | Network devices and communication                  |
-| 07 | Network Attacks             | Network attack techniques and analysis             |
-| 08 | Network Monitoring          | Traffic capture, monitoring and analysis           |
-| 09 | Network Defense             | Network protection and access control              |
-| 10 | Cryptography                | Encryption, hashing and security monitoring        |
-| 11 | Endpoint Security           | Endpoint vulnerabilities and attacks               |
-| 12 | Security Alerts             | Alert investigation and analysis                   |
-| 13 | Intrusion Analysis          | Compromised hosts and vulnerability identification |
-| 14 | Incident Response           | Investigation and incident response processes      |
+1. Add a short one-line summary at the top of each lab README describing the SOC outcome (e.g., "Extracted IOC: suspicious DNS A records; Escalation-ready report included").
+2. For each lab, add a single screenshot and a 2–3 bullet TL;DR labeled "Hiring manager TL;DR" with the evidence and why it matters for SOC work.
+3. Create a single `evidence-summary.md` at the repo root that lists the top 3 artifacts (pcap path, screenshot path, TL;DR) so recruiters can view proof in < 2 minutes.
+4. Add a short CV-ready blurb at the top of README (see "How this maps to SOC Tier 1 tasks" above) so recruiters can copy-paste directly.
 
----
+## Example "Hiring manager TL;DR" to add to a lab README
 
-## 🛠️ Tools & Technologies
+- Outcome: Identified DNS exfiltration pattern in a simulated capture and extracted 3 IOCs (malicious domain, source IP, temporary client port).
+- Why it matters: Demonstrates ability to find exfiltration indicators and prepare escalation notes for incident handlers.
+- Artifacts: `Lab 10.2.7/dns_capture.pcap`, `Lab 10.2.7/dns_analysis.png`
 
-The practical exercises involved working with cybersecurity and networking technologies such as:
+## Author (short)
 
-* **Cisco CyberOps Associate**
-* **Cisco Networking Academy**
-* **Wireshark**
-* **Linux**
-* **Windows**
-* **Virtual Machines**
-* **Network analysis tools**
-* **Packet capture and analysis**
-* **Network monitoring tools**
-* **Cryptographic techniques**
-* **Endpoint security concepts**
-* **Security alert analysis**
-* **Incident response methodologies**
+Mohammed Ashraf — Cybersecurity student focused on SOC operations and incident response. This repo documents my practical work during Cisco CyberOps Associate training. Contact: your.email@example.com or see CV in the repo.
 
----
+## License & Disclaimer
 
-## 📸 Practical Evidence
-
-Screenshots and supporting documentation are included throughout the labs to demonstrate the practical work performed during the training.
-
-The evidence includes:
-
-* Lab environments and configurations
-* Command-line activities
-* Network traffic captures
-* Packet analysis
-* Security investigations
-* Tool usage
-* Configuration results
-* Analysis findings
-* Completed lab exercises
-
-These materials provide visual and technical evidence of the hands-on nature of the training.
-
----
-
-## 📚 Key Learning Outcomes
-
-Through completing these practical exercises, I developed hands-on experience in:
-
-* 🔎 Analyzing network traffic and packets
-* 🌐 Understanding network protocols and services
-* 🛡️ Identifying common network attacks
-* 🖥️ Working with Windows and Linux security environments
-* 📊 Monitoring network activity
-* 🚨 Investigating security alerts
-* 🔬 Analyzing suspicious network activity
-* 💻 Investigating endpoint vulnerabilities
-* 🔐 Understanding cryptography and its role in security
-* 🕵️ Identifying potentially compromised systems
-* 🧩 Analyzing intrusion data
-* 📋 Applying incident response concepts
-* 🛡️ Understanding defensive security operations
-* 👨‍💻 Developing a SOC-oriented cybersecurity mindset
-
----
-
-## 🏆 Certification
-
-### Cisco CyberOps Associate — Student Level Credential
-
-**Issued:** July 9, 2026
-
-Successfully completing the course demonstrates knowledge and practical exposure to cybersecurity operations, network security monitoring, threat analysis, endpoint security, and incident response.
-
----
-
-## 👤 Author
-
-**Mohammed Ashraf**
-
-**Cybersecurity Student | SOC & Cybersecurity Operations**
-
-Interested in **Cybersecurity Operations, SOC Analysis, Threat Detection, Digital Forensics, Network Security, and Incident Response**.
-
-This repository represents one part of my continuous journey toward developing practical cybersecurity skills through hands-on labs, technical research, and security challenges.
-
----
-
-## ⚠️ Disclaimer
-
-This repository is a **personal cybersecurity learning portfolio** documenting my practical work during the Cisco CyberOps Associate training with NTI.
-
-Cisco, Cisco Networking Academy, and NTI course materials remain the property of their respective owners. Original copyrighted course materials and lab instructions are not redistributed through this repository.
-
-The screenshots, notes, configurations, analysis, and observations included here represent my own practical work and learning experience.
-
----
-
-⭐ **This repository is part of my continuous cybersecurity learning journey — learning, practicing, analyzing, and building.**
+This repository documents my own notes and screenshots created during training. Cisco course materials are proprietary; no original course content is reproduced here. Use these materials only for evaluation of my hands-on skills.
